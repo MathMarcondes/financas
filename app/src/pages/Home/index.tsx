@@ -1,15 +1,72 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, FlatList } from "react-native";
 import Header from "../../Components/Header";
+import Balance from "../../Components/Balance";
 
+const list = [
+    {
+        id: 1,
+        label:'Luz',
+        value:'49,90',
+        date:'17/02/2025',
+        type:0 // despesas
+    },
+    {
+        id: 2,
+        label:'Água',
+        value:'50,90',
+        date:'17/02/2025',
+        type:0 // despesas
+    },
+    {
+        id: 3,
+        label:'Internet',
+        value:'100,90',
+        date:'17/02/2025',
+        type:0 // despesas
+    },
+    {
+        id: 4,
+        label:'Amélia/Conserto PC',
+        value:'300,90',
+        date:'17/02/2025',
+        type:1 // receitas
+    },
+    {
+        id: 5,
+        label:'Tony / Formatação',
+        value:'250,00',
+        date:'10/02/2025',
+        type:1 // receitas
+    },
+]
 
 export default function Home() {
   return (
     <View>
       <Header name="Matheus Marcondes"/>
-      <Text>Página Home</Text>
+      <Balance saldo="10.000.000,00" despesas="200.000"/>
+      <Text>Ultimas transações</Text>
+      <FlatList
+        style={styles.list}
+        data={list}
+        keyExtractor={(item) => String(item.id)}
+        showsVerticalScrollIndicator={false}
+        renderItem={({item}) => <Text>{item.id}</Text> }
+      />
     </View>
     
   );
 }
+
+const styles = StyleSheet.create({
+    container:{
+        flex: 1,
+        backgroundColor: '#fafafa',
+    },
+    list:{
+        marginStart: 14,
+        marginEnd: 14
+    }
+})
 
 
