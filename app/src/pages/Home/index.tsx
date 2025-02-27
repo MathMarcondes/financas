@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, FlatList } from "react-native";
 import Header from "../../Components/Header";
 import Balance from "../../Components/Balance";
+import Movements from "../../Components/Movements";
 
 const list = [
     {
@@ -51,8 +52,9 @@ export default function Home() {
         data={list}
         keyExtractor={(item) => String(item.id)}
         showsVerticalScrollIndicator={false}
-        renderItem={({item}) => <Text>{item.id}</Text> }
+        renderItem={({item}) => <Movements data={item}/> }
       />
+      
     </View>
     
   );
