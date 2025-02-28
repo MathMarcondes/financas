@@ -7,7 +7,7 @@ const list = [
     {
         id: 1,
         label:'Luz',
-        value:'49,90',
+        value:'30,90',
         date:'17/02/2025',
         type:0 // despesas
     },
@@ -46,7 +46,7 @@ export default function Home() {
     <View>
       <Header name="Matheus Marcondes"/>
       <Balance saldo="10.000.000,00" despesas="200.000"/>
-      <Text>Ultimas transações</Text>
+      <Text style={styles.Title}>Ultimas transações</Text>
       <FlatList
         style={styles.list}
         data={list}
@@ -68,7 +68,13 @@ const styles = StyleSheet.create({
     list:{
         marginStart: 14,
         marginEnd: 14
-    }
+    },
+    Title:{
+        fontSize: 19,
+        fontWeight: 'bold',
+    },
+    
+
 })
 
 
