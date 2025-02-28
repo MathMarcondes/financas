@@ -8,6 +8,67 @@ export default function Actions() {
             <View style={styles.areaButton}>
                 <AntDesign name="addfolder" size={26} color='#000'/>
             </View>
+            <Text style={styles.labelButton}>Conta</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.actionButton}>
+            <View style={styles.areaButton}>
+                <AntDesign name="addfolder" size={26} color='#000'/>
+            </View>
+            <Text style={styles.labelButton}>Conta</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.actionButton}>
+            <View style={styles.areaButton}>
+                <AntDesign name="addfolder" size={26} color='#000'/>
+            </View>
+            <Text style={styles.labelButton}>Conta</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.actionButton}>
+            <View style={styles.areaButton}>
+                <AntDesign name="addfolder" size={26} color='#000'/>
+            </View>
+            <Text style={styles.labelButton}>Conta</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.actionButton}>
+            <View style={styles.areaButton}>
+                <AntDesign name="addfolder" size={26} color='#000'/>
+            </View>
+            <Text style={styles.labelButton}>Conta</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.actionButton}>
+            <View style={styles.areaButton}>
+                <AntDesign name="addfolder" size={26} color='#000'/>
+            </View>
+            <Text style={styles.labelButton}>Conta</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.actionButton}>
+            <View style={styles.areaButton}>
+                <AntDesign name="addfolder" size={26} color='#000'/>
+            </View>
+            <Text style={styles.labelButton}>Conta</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.actionButton}>
+            <View style={styles.areaButton}>
+                <AntDesign name="addfolder" size={26} color='#000'/>
+            </View>
+            <Text style={styles.labelButton}>Conta</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.actionButton}>
+            <View style={styles.areaButton}>
+                <AntDesign name="addfolder" size={26} color='#000'/>
+            </View>
+            <Text style={styles.labelButton}>Conta</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.actionButton}>
+            <View style={styles.areaButton}>
+                <AntDesign name="addfolder" size={26} color='#000'/>
+            </View>
+            <Text style={styles.labelButton}>Conta</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.actionButton}>
+            <View style={styles.areaButton}>
+                <AntDesign name="addfolder" size={26} color='#000'/>
+            </View>
+            <Text style={styles.labelButton}>Conta</Text>
         </TouchableOpacity>
 
    </ScrollView>
@@ -27,7 +88,15 @@ const styles = StyleSheet.create({
             alignItems: 'center'
         },
         areaButton:{
-            
+            paddingStart: 10,
+            paddingEnd: 10,
+        },
+        labelConta:{
+            fontWeight: 'bold',
+            fontSize: 14
+        },
+        labelButton:{
+
         }
 
 })
